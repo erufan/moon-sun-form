@@ -1,4 +1,13 @@
+import "./Moon.css";
+
 const Moon = () => {
+  window.onload = () => {
+    const moon = document.querySelector("div");
+    moon.onclick = () => {
+      moon.classList.add("move");
+    };
+  };
+
   return ` <div>
       <svg
         width="150"
@@ -18,5 +27,4 @@ const Moon = () => {
  
 `;
 };
-
 export default Moon;
