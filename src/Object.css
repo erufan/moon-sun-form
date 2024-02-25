@@ -2,7 +2,7 @@ div {
   position: relative;
   top: 0;
   left: 0;
-  transition: opacity 2s, top 3s, left 3s cubic-bezier(0.5, 1.5, 1, 0.5);
+  transition: opacity 1s, top 3s, left 3s cubic-bezier(0.5, 1.5, 1, 0.5);
 }
 
 .move {
@@ -11,4 +11,19 @@ div {
   left: 150px;
   z-index: -1;
   opacity: 0;
+}
+
+.obj {
+  animation: rise 0.5s;
+}
+
+@keyframes rise {
+  from {
+    top: 300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }

@@ -3,20 +3,22 @@ import "./Object.css";
 import Sun from "./Sun";
 import Moon from "./Moon";
 let day = false;
+const body = document.getElementById("app");
 
 const Object = () => {
   if (day) return Sun();
   return Moon();
 };
 
-window.onload = () => {
-  const moon = document.querySelector("div");
-  const body = document.getElementById("app");
-  moon.onclick = () => {
-    moon.classList.add("move");
-    body.classList.add("body");
+document.onclick = (e) => {
+  let myObject = e.target.parentNode;
+  if (myObject.tagName === "svg") {
+    myObject.parentNode.classList.add("move");
     day = !day;
-    setTimeout(() => app(), 4000);
-  };
+    setTimeout(() => {
+      body.classList.toggle("body");
+      app();
+    }, 1000);
+  }
 };
 export default Object;

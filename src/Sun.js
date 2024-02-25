@@ -1,5 +1,5 @@
 const Sun = () => {
-  return ` <div>
+  return ` <div class="obj">
       <svg
         width="150"
         height="150"

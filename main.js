@@ -1,10 +1,10 @@
 import Form from "./src/Form";
-import Moon from "./src/Object";
+import Object from "./src/Object";
 import Inputs from "./src/Inputs";
 
 const app = () => {
   document.querySelector("#app").innerHTML = `
-${Moon()}
+${Object()}
 ${Form(Inputs())}
 `;
 };
