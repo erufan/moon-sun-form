@@ -2,7 +2,12 @@ import Form from "./src/Form";
 import Moon from "./src/Moon";
 import Inputs from "./src/Inputs";
 
-document.querySelector("#app").innerHTML = `
+const app = () => {
+  document.querySelector("#app").innerHTML = `
 ${Moon()}
 ${Form(Inputs())}
 `;
+};
+
+app();
+export default app;
