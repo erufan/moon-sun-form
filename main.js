@@ -1,5 +1,5 @@
 import Form from "./src/Form";
-import Moon from "./src/Moon";
+import Moon from "./src/Object";
 import Inputs from "./src/Inputs";
 
 const app = () => {
