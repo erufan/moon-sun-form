@@ -1,3 +1,5 @@
+import "./Form.css";
+
 const Form = (children) => {
   return `<div>
       <form class="card">

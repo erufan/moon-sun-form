@@ -1,3 +1,5 @@
+import "./Inputs.css";
+
 const Inputs = () => {
   return `
         <h1 class="header">Log In</h1>
