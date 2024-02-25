@@ -4,4 +4,55 @@ body {
   align-content: center;
   min-height: 90vh;
   flex-wrap: wrap;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background-color: rgba(15, 15, 15, 0.75);
+  padding: 28px 42px;
+  border-radius: 10px;
+}
+
+.header {
+  font-size: 28px;
+  color: #ffff;
+  margin-bottom: 8px auto;
+  padding: 0;
+  text-align: center;
+}
+
+.card label {
+  color: #ffff;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.card > *[type="text"],
+[type="number"] {
+  display: block;
+  margin-bottom: 24px;
+  padding: 8px 64px 8px 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.card > *[type="submit"] {
+  display: block;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 8px 31px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  transition: transform 0.1s;
+}
+.card > *[type="submit"]:hover {
+  background-color: #f2f2f2bf;
+}
+.card > *[type="submit"]:active {
+  transform: scale(0.9);
 }
