@@ -1,12 +1,11 @@
-.card > * {
+form > * {
   display: block;
   border-radius: 5px;
   border-radius: 5px;
   outline: none;
-  color: rgba(236, 157, 157, 0.749);
   border: none;
+  transition: 1s all;
 }
-
 .header {
   font-size: 28px;
   margin-bottom: 8px auto;
@@ -14,17 +13,17 @@
   text-align: center;
 }
 
-.card label {
+form label {
   margin-bottom: 8px;
 }
 
-.card > *[type="text"],
+form > *[type="text"],
 [type="number"] {
   margin-bottom: 24px;
   padding: 8px 64px 8px 12px;
 }
 
-.card > *[type="submit"] {
+form > *[type="submit"] {
   padding: 8px 31px;
   margin: 0 auto;
   font-weight: bold;
@@ -32,10 +31,14 @@
   text-align: center;
   transition: transform 0.1s;
 }
-.card > *[type="submit"]:hover {
+form > *[type="submit"]:hover {
   background-color: #919191bf;
   transform: scale(1.1);
 }
-.card > *[type="submit"]:active {
+form > *[type="submit"]:active {
   transform: scale(1);
+}
+
+.card {
+  color: #ec9d9dbf;
 }

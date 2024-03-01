@@ -5,7 +5,7 @@ import Inputs from "./src/Inputs";
 const app = (day) => {
   document.querySelector("#app").innerHTML = `
 ${Object()}
-${Form(Inputs(), day)}
+${Form(Inputs(day), day)}
 `;
 };
 
