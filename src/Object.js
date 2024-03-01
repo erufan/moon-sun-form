@@ -2,6 +2,7 @@ import app from "../main";
 import "./Object.css";
 import Sun from "./Sun";
 import Moon from "./Moon";
+
 let day = false;
 const body = document.getElementById("app");
 
@@ -17,7 +18,7 @@ document.onclick = (e) => {
     day = !day;
     setTimeout(() => {
       body.classList.toggle("body");
-      app();
+      app(day);
     }, 1000);
   }
 };
