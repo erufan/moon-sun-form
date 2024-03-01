@@ -16,8 +16,10 @@ document.onclick = (e) => {
   if (myObject.tagName === "svg") {
     myObject.parentNode.classList.add("move");
     day = !day;
+    !day && body.classList.toggle("body");
     setTimeout(() => {
       body.classList.toggle("body");
+      !day && body.classList.toggle("body");
       app(day);
     }, 1000);
   }

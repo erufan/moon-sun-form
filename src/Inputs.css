@@ -3,8 +3,8 @@ form > * {
   border-radius: 5px;
   border-radius: 5px;
   outline: none;
+  animation: show 1s both;
   border: none;
-  transition: 1s all;
 }
 .header {
   font-size: 28px;
@@ -41,4 +41,13 @@ form > *[type="submit"]:active {
 
 .card {
   color: #ec9d9dbf;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
