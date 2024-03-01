@@ -1,32 +1,30 @@
+.card > * {
+  display: block;
+  border-radius: 5px;
+  border-radius: 5px;
+  outline: none;
+  color: rgba(236, 157, 157, 0.749);
+  border: none;
+}
+
 .header {
   font-size: 28px;
-  color: #ffff;
   margin-bottom: 8px auto;
   padding: 0;
   text-align: center;
 }
 
 .card label {
-  color: #ffff;
   margin-bottom: 8px;
-  display: block;
 }
 
 .card > *[type="text"],
 [type="number"] {
-  display: block;
   margin-bottom: 24px;
   padding: 8px 64px 8px 12px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
 }
 
 .card > *[type="submit"] {
-  display: block;
-  border-radius: 5px;
-  outline: none;
-  border: none;
   padding: 8px 31px;
   margin: 0 auto;
   font-weight: bold;
@@ -35,8 +33,9 @@
   transition: transform 0.1s;
 }
 .card > *[type="submit"]:hover {
-  background-color: #f2f2f2bf;
+  background-color: #919191bf;
+  transform: scale(1.1);
 }
 .card > *[type="submit"]:active {
-  transform: scale(0.9);
+  transform: scale(1);
 }
